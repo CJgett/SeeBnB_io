@@ -39,11 +39,11 @@ self.__precacheManifest = [
     "url": "framework-5ac8f90ee317a2a086fa.js"
   },
   {
-    "url": "app-a8c7e7f2de0a0b19a4fe.js"
+    "url": "app-9d81c483fbd2395fb88f.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "0195162cb84d4f24c9485fdce1382ad1"
+    "revision": "d8648d4ff3f7b9f4647c897ca4fb12b3"
   },
   {
     "url": "component---cache-caches-gatsby-plugin-offline-app-shell-js-b7f66968ae0c08958218.js"
@@ -62,7 +62,7 @@ self.__precacheManifest = [
   },
   {
     "url": "page-data/app-data.json",
-    "revision": "2b6758cd3ead9709007a94cca2ffd81d"
+    "revision": "b9e9dccf45476eeffa600423faca1d0d"
   },
   {
     "url": "polyfill-98e35938f8f19cb2ed79.js"
@@ -161,7 +161,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/SeeBnB_io/app-a8c7e7f2de0a0b19a4fe.js`))) {
+  if (!resources || !(await caches.match(`/SeeBnB_io/app-9d81c483fbd2395fb88f.js`))) {
     return await fetch(event.request)
   }
 
